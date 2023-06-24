@@ -11,13 +11,13 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "gasoto",
     password: "1228",
-    database:"roommate_finder" 
+    database:"Map" 
 })
 
 module.exports = db;
 
 app.get("/api", (req, res) => {
-    res.json({ message: "It Works!" });
+    res.json({ message: "it works!" });
 });
 
 app.listen(3001, () => {
