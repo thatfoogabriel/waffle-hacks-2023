@@ -13,6 +13,6 @@ go back to the root folder:
 
 `C:\...\waffle-hacks-2023\client> cd ..`
 
-now you can use npm start to open the website
+use npm start to run the website and the server
 
 `C:\...\waffle-hacks-2023> npm start`
