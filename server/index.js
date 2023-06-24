@@ -16,10 +16,10 @@ const db = mysql.createConnection({
 
 module.exports = db;
 
-app.get("/", (req, res) => {
-    res.json({ message: "Hello from server!" });
+app.get("/api", (req, res) => {
+    res.json({ message: "It Works!" });
 });
 
 app.listen(3001, () => {
-    console.log(`Server listening on 3001`);
+    console.log(`Server listening on port 3001`);
 });
