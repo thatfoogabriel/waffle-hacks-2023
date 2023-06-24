@@ -6,6 +6,7 @@ export default function Navbar() {
         <nav>
             <Link to="/">Home</Link>
             <Link to="#about">About</Link>
+            {/*Link should work like href i think*/}
         </nav>
         <div><Link to="/map">Map</Link></div>
         <Outlet/>
