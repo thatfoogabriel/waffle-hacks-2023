@@ -9,10 +9,35 @@ export default function Map() {
         .then((data) => setData(data.message));
     }, []);
 
+    useEffect(() => {
+        window.initMap = () => {
+            const map = new window.google.maps.Map(document.getElementById('map'), {
+                center: { lat: 33.9022 , lng: -118.0817 },
+                zoom: 10,
+            });
+
+            map.addListener('click', (event) => {
+                const clickedLatLng = {
+                    lat: event.latLng.lat(),
+                    lng: event.latLng.lng(),
+                };
+                console.log('Clicked coordinates:', clickedLatLng);
+            });
+        }
+
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyA5z4f1PUjzTAw4_u2W1SFAsJ-1JYJXRnw&callback=initMap`;
+        script.async = true;
+        script.defer = true;
+        document.head.appendChild(script);
+
+        return () => {document.head.removeChild(script);};
+        }, []);
+
     return (
     <div className="App">
         <p>{!data ? "naw still broken :/" : data}</p>
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1aJ5uRmHJPtI2KWD6vssBdCJfDXe1VVQ&ehbc=2E312F" width="640" height="480" title='map'></iframe>
+        <div id="map" style={{ width: '640px', height: '480px' }}></div>
     </div>
     );
 }
