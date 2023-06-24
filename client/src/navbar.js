@@ -4,11 +4,10 @@ export default function Navbar() {
     return (
     <>
         <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/map">Map</Link></li>
-            </ul>
+            <Link to="/">Home</Link>
+            <Link to="#about">About</Link>
         </nav>
+        <div><Link to="/map">Map</Link></div>
         <Outlet/>
     </>
     )
