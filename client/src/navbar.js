@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -9,6 +9,7 @@ export default function Navbar() {
                 <li><Link to="/map">Map</Link></li>
             </ul>
         </nav>
+        <Outlet/>
     </>
     )
 };
