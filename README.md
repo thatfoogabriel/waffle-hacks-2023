@@ -15,4 +15,4 @@ go back to the root folder:
 
 now you can use npm start to open the website
 
-`C:\...\waffle-hacks-2023\> npm start`
+`C:\...\waffle-hacks-2023> npm start`
