@@ -1,11 +1,14 @@
 /* Style for the homenav container */
-.homenav {
-         max-width: 85%;
-         margin: 0 auto;
-         padding: 5px;
-         font-family: Arial, sans-serif;
-       }
-       
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(220, 246, 255, 1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
        /* Style for the header */
        h1 {
          color:rgba(0, 87, 165, 1);
@@ -13,7 +16,19 @@
          font-size: 28px;
          margin-bottom: 10px;
        }
-       
+       .section {
+        display: flex; /* Enable flexbox layout */
+        justify-content: space-between; /* Align items with space between them */
+        flex-direction:column | column-reverse;
+      }
+      
+      .item {
+        flex: 3; /* Distribute available space equally among items */
+        margin: 10px; /* Add margin around items */
+      }
+
+
+
        
        /* Style for the paragraphs */
        p {
@@ -67,3 +82,6 @@
        a:hover {
          text-decoration: underline;
        }
+
+
+    
