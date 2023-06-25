@@ -19,7 +19,7 @@
        .section {
         display: flex; /* Enable flexbox layout */
         justify-content: space-between; /* Align items with space between them */
-        flex-direction:column | column-reverse;
+        flex-direction:row;
       }
       
       .item {

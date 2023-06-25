@@ -8,7 +8,7 @@ export default function Home(){
     <div class = "home">
             <h1>Waffle nEARby</h1>
         <div class="section">
-            <img class ="item" src="images/couple.png" alt="pic"/>
+            <img class ="item" src="images/couple.png" alt="pic"width="400" height="233"/>
                 <p class ="item">Our society has a drive towards 
                     fostering inclusivity and acceptance for individuals with disabilities.
                     Recognizing the significance of enabling comprehensive support systems, 
@@ -18,9 +18,10 @@ export default function Home(){
                     they require, we unlock their immense potential to emerge as trailblazing
                     pioneers, poised to shape and lead with innovation in the future.
                 </p>
-                <img class="item" src="images/hands.png" alt="Hpic"/>
+                <img class="item" src="images/hands.png" alt="Hpic"width="400" height="200"/>
             <div class="item">
                 <button>Find ways you can help</button>
+            
                 <button>Services Located Near You</button>
             </div>
         </div> 
@@ -28,7 +29,7 @@ export default function Home(){
         <div class="section">
             <div class="item">
              <h2>About us:</h2>
-                <img src="images/Bhands.png" alt="pic"/>
+                <img src="images/Bhands.png" alt="pic"width="200" height="200"/>
             </div>
             <div class= "item">
                 <h3>Mission Statement</h3>
@@ -42,20 +43,30 @@ export default function Home(){
         <div class="section">
             <h2>Check out these videos!</h2>
             <div class= "item">
-                <video width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4"></source>
-                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/io7z5PftOU4" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div> 
             <div class="item">
-                <video width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4"></source>
-                </video>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/KYwMpLmIbDE" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+                
+                
             </div>
         </div>   
 
         <div class="section"> 
             <h2>Resources:</h2>
-                <img src="images/DSP.png" alt="pic"/>
+                <img src="images/DSP.png" alt="pic"width="400" height="200"/>
                 <p><a href="https://www.dawnsign.com/">https://www.dawnsign.com/</a></p>
                  <p>DawnSignPress creates, develops, and publishes quality American Sign
                  Language (ASL) and Deaf culture-related videos and books. Dedicated 
@@ -77,12 +88,14 @@ export default function Home(){
                     who are deaf or hard of hearing.  All of this information may be shared to inform 
                     and educate others.
                 </p>
-                <img src="images/NAd.jpg" alt="pic"/>
+                <img src="images/NAd.jpg" alt="pic" width="400" height="200"/>
                 <p><a href="https://www.nad.org/resources/">https://www.nad.org/resources/</a></p>
+                <div class="item">
                 <h3>Additional Resources</h3>
                 <p><a href="https://www.cdc.gov/">CDC Resources Link </a></p>
                 <p><a href="https://gladinc.org/">Greater Los Angeles on Deafness Link </a></p>
                 <p><a href="https://www.asha.org/">American Speech-Language-Hearing Association </a></p>
+                </div>
         </div>      
 
     </div>
