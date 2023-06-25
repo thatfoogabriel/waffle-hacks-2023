@@ -1,9 +1,11 @@
 import  React from 'react';
+import { Link } from "react-router-dom";
 import './home.css';
 
 
 export default function Home(){
     return(
+        
     
     <div class = "home">
             <h1>Waffle nEARby</h1>
@@ -25,6 +27,8 @@ export default function Home(){
                 <button>Services Located Near You</button>
             </div>
         </div> 
+
+        <div><Link to="/map">See What's Nearby!</Link></div>
 
         <div class="section">
             <div class="item">

@@ -4,11 +4,9 @@ export default function Navbar() {
     return (
     <>
         <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-            </ul>
+            <Link to="/"><img src="images/WaffleEar.png" alt="" /></Link>
+            <Link to="/signin">Sign in</Link>
         </nav>
-        <div><Link to="/map">Map</Link></div>
         <Outlet/>
     </>
     )

@@ -11,13 +11,38 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "gasoto",
     password: "1228",
-    database:"Map" 
+    database: "map" 
 })
 
 module.exports = db;
 
 app.get("/api", (req, res) => {
-    res.json({ message: "it works!" });
+    const markerName = req.query.marker;
+    console.log(markerName);
+    const query = `SELECT * FROM map WHERE name = ?`;
+    db.query(query, [markerName], (error, results) => {
+        if (error) {
+            console.error(error);
+            res.status(500).json({ message: "Server error" });
+        } 
+        else {
+            if (results.length > 0) {
+                const markerData = {
+                    name: results[0].name,
+                    location: results[0].location,
+                    service: results[0].service,
+                    hours: results[0].hours,
+                    info: results[0].info,
+                    contact: results[0].contact,
+                    accommodations: results[0].accommodations
+                };
+                res.json({ data: markerData });
+            } 
+            else {
+                res.status(404).json({ message: `${markerName} not found` });
+            }
+        }
+    });
 });
 
 app.listen(3001, () => {
