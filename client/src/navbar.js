@@ -6,7 +6,6 @@ export default function Navbar() {
         <nav>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/map">Map</Link></li>
             </ul>
         </nav>
         <div><Link to="/map">Map</Link></div>
