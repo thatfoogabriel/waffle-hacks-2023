@@ -8,7 +8,7 @@ export default function Home(){
         
     
     <div class = "home">
-            <h1>Waffle nEARby</h1>
+            <h1>nEARby</h1>
         <div class="section">
             <img class ="item" src="images/couple.png" alt="pic"width="400" height="233"/>
                 <p class ="item">Our society has a drive towards 
@@ -28,7 +28,7 @@ export default function Home(){
             </div>
         </div> 
 
-        <div><Link to="/map">See What's Nearby!</Link></div>
+        <div><Link to="/map">See What's nEARby!</Link></div>
 
         <div class="section">
             <div class="item">

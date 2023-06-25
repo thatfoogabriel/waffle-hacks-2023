@@ -5,6 +5,7 @@ export default function Navbar() {
     <>
         <nav>
             <Link to="/"><img src="images/WaffleEar.png" alt="" /></Link>
+            <Link to="/">nEARby</Link>
             <Link to="/signin">Sign in</Link>
         </nav>
         <Outlet/>

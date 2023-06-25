@@ -4,7 +4,7 @@ export default function Signin() {
     return (
         <div class="sign-container">
 
-        <h1>Welcome to Waffle Ear!</h1>
+        <h1>Welcome to nEARby!</h1>
             <form id="sign-in" title="sign-in">
 
             <label for="FirstN">First Name:</label>
