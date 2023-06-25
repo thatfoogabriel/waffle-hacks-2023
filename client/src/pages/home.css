@@ -1,87 +1,242 @@
-/* Style for the homenav container */
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(220, 246, 255, 1);
-  padding: 20px;
-  font-family: Arial, sans-serif;
+
+* 
+{
+  padding: 0; 
+  margin: 0;
+}
+
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color: lavender;
+    background-image: url('');
+
+    /* Customize the font, size, and color for text*/
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+
+    /* Adjust the padding and margins */
+    padding-bottom: 50px;
+
+}
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+  font-size: 120px;
+  font-family: 'Didot', serif ;
+  padding: 90px;
+}
+
+h2 {
+font-size: 50px;
+font-family: 'Bookman', 'URW Bookman L', serif;
+padding: 50px;
+}
+
+h3 {
+font-size: 40px;
+font-family: 'Bookman', 'URW Bookman L', serif;
+padding: 50px;
+}
+
+h4{
+  padding: 30px;
+}
+
+p {
+font-size: 25px;
+font-family: 'Georgia', serif;
+text-align: center;
+
+}
+
+a:link { color: black;}
+a:visited{ color: purple;}
+a:hover { color: red;  }
+a:active{ color: green;}
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+li {
+  font-size: 20px;
+  padding: 30px;
 }
 
 
-       /* Style for the header */
-       h1 {
-         color:rgba(0, 87, 165, 1);
-         text-align: center;
-         font-size: 28px;
-         margin-bottom: 10px;
-       }
-       .section {
-        display: flex; /* Enable flexbox layout */
-        justify-content: space-between; /* Align items with space between them */
-        flex-direction:column | column-reverse;
-      }
-      
-      .item {
-        flex: 3; /* Distribute available space equally among items */
-        margin: 10px; /* Add margin around items */
-      }
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color:  #491B4B;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+/* Select and style elements by class name or ID */
 
 
+/* Example: This styles elements with class="header"*/
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+  margin-bottom: 30px;
 
-       
-       /* Style for the paragraphs */
-       p {
-         color: black;
-         font-family: Inria sans;
-         line-height: 2;
-         margin-bottom: 35px;
-         margin-left: 300px;
-         margin-right: 300px;
-         text-align:center;
-       }
-       
-       /* Style for the buttons */
-       button {
-         padding: 10px 20px;
-         margin-bottom: 10px;
-         background-color: rgba(160, 220, 242, 1);
-         font-family: Inria sans;
-         color: rgb(0, 0, 0);
-         border: none;
-         cursor: pointer;
-       }
-       
-       /* Style for the headings */
-       h2, h3 {
-         font-style:bold;
-         font-family: Inria sans;
-         font-size: 24px;
-         margin-bottom: 10px;
-       }
-       
-       /* Style for the videos */
-       video {
-         max-width: 100%;
-         margin-bottom: 10px;
-         margin-right:50px;
-         margin-left:80px;
-       }
-       
-       /* Style for the additional resources section */
-       h3 {
-         font-size: 18px;
-         margin-bottom: 5px;
-       }
-       
-       a {
-         color: #000000;
-         text-decoration: none;
-       }
-       
-       a:hover {
-         text-decoration: underline;
-       }
+}
+
+#col{
+  flex-direction: column;
+}
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 30px ;
+  width: 20%;
+  max-width: 30%;
+  padding: 50px;
+flex-direction: row;
+}
+#header-img img{
+  height: 400px;
+  width: 500px;
+  padding: 30px;
+}
 
 
-    
+#header-button{
+  display: flex;
+  cursor: pointer;
+  padding: 80px;
+  justify-content: space-around;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #A5A2B9;
+}
+
+.footer h3{
+  padding: 5px;
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: z-index;
+  top: 0;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #8D89A6;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+  color: blue;
+}
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Videos{
+  padding: 30px;
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: #A081B1;
+  color: white;
+
+}
+
+/* Add style to button */
+#theme-button {
+font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
