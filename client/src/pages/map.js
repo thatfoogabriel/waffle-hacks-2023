@@ -7,7 +7,7 @@ export default function Map() {
         const handleMarkerClick = (markerName) => {
             fetch(`http://localhost:3001/api?marker=${markerName}`)
                 .then((res) => res.json())
-                .then((data) => {setData(data.data); console.log(data)})
+                .then((data) => setData(data.data))
         }
 
         window.initMap = () => {

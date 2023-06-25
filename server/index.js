@@ -18,7 +18,6 @@ module.exports = db;
 
 app.get("/api", (req, res) => {
     const markerName = req.query.marker;
-    console.log(markerName);
     const query = `SELECT * FROM map WHERE name = ?`;
     db.query(query, [markerName], (error, results) => {
         if (error) {
