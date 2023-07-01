@@ -68,7 +68,7 @@ Client-Server Model
 - Map Filters
 - Dark Mode, Colorblind Modes
 
-## Thoughts/Lesson Learned
+# Thoughts/Lesson Learned
 ### Inspiration:
 During our discussion of what theme we wanted to do for the project, we needed help finding something that clicked. Then One of our team members mentioned that they took American Sign Language at her local community college. They emphasized the importance of raising awareness of Deaf culture and promoting events. Then we clicked to create a map-based website to raise awareness of upcoming events in the deaf community and promote deaf-friendly establishments and services.
 
