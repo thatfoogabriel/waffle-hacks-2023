@@ -79,7 +79,7 @@ We aim to develop a map-based app that raises awareness of Deaf-friendly establi
 We started designing in Figma to nail down our ideas and make the implementation smoother. We collected data on deaf-friendly establishments, services, and social events into a spreadsheet, then into a database. We built our website using React, and once we worked out the routing between pages, we started building our designs.
 
 ### Challenges we ran into:
-We first used Google's free MyMaps since it could import data from Google Sheets, but we needed help to track when or where a user clicks on the embedded map on the website. So we started over using Google's Javascript Map API, which we were unfamiliar with but could do what is needed we needed. We also ran into time issues since our work schedules conflicted. We are beginners in web development and could have spent a few more days figuring out how a flexbox works.
+We first used Google's free MyMaps since it could import data from Google Sheets, but we needed help to track when or where a user clicks on the embedded map on the website. So we started over using Google's Javascript Map API, which we were unfamiliar with, but it could do what we needed. We also ran into time issues since our work schedules conflicted. We are beginners in web development and could have spent a few more days figuring out how a flexbox works.
 
 ### Accomplishments that we're proud of:
 We accomplished our first hackathon with a product that works! ...mostly. Using Figma, Kanban, and GitHub helped our asynchronous collaboration and navigated our scheduling issues.
